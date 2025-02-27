@@ -7,6 +7,7 @@ This project combines Named Entity Recognition (NER) and Image Classification (C
 ```
 project/
 ├── CNN_realization/
+│   ├── translate.py       # Utility for translating folder from italian to english
 │   ├── CNN_data/
 │   │   └── raw-img/      # Animal images organized by class folders
 │   │       ├── butterfly/
@@ -38,14 +39,12 @@ project/
 │   │   ├── tokenizer.json
 │   │   ├── tokenizer_config.json
 │   │   └── vocab.txt
-│   ├── result/                       # Training results
 │   ├── NER_data_analysis.ipynb       # Data analysis notebook
 │   ├── NER_inference.py              # Script for running inference
 │   └── NER_train.py                  # Script for training the NER model
 │
 ├── demo.ipynb                        # Demo notebook (this file)
 ├── test.py                           # Combined pipeline testing script
-├── translate.py                      # Utility for translating folder names
 ├── requirements.txt                  # Project dependencies
 └── README.md                         # Project documentation
 ```
@@ -62,7 +61,18 @@ project/
    ```bash
    pip install -r requirements.txt
    ```
-
+3. Download Dataset
+To download the **Animals-10** dataset, run the following command:
+   ```bash
+   cd CNN_data
+   kaggle datasets download -d alessiocorrado99/animals10
+   unzip animals10.zip -d raw-img
+   ```
+4. Prepare Dataset
+Extract the dataset and rename class folders using:
+   ```bash
+   python translate.py
+   ```
 ## Models
 
 ### 1. CNN Image Classification Model
@@ -78,6 +88,9 @@ project/
 - **Input**: Text
 - **Output**: Animal entity extraction
 - **Entity Types**: B-ANIMAL (Beginning of animal entity)
+### 3. Download
+
+Download models from google disk: https://drive.google.com/drive/folders/1IZCtTTxHP8woyafc-LxPG3V2hyeUXgfc?usp=sharing
 
 ## Usage
 
