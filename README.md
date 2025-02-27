@@ -88,6 +88,9 @@ Extract the dataset and rename class folders using:
 - **Input**: Text
 - **Output**: Animal entity extraction
 - **Entity Types**: B-ANIMAL (Beginning of animal entity)
+### 3. Download
+
+Download models from google disk: https://drive.google.com/drive/folders/1IZCtTTxHP8woyafc-LxPG3V2hyeUXgfc?usp=sharing
 
 ## Usage
 
