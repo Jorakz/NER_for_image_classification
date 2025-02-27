@@ -39,7 +39,6 @@ project/
 │   │   ├── tokenizer.json
 │   │   ├── tokenizer_config.json
 │   │   └── vocab.txt
-│   ├── result/                       # Training results
 │   ├── NER_data_analysis.ipynb       # Data analysis notebook
 │   ├── NER_inference.py              # Script for running inference
 │   └── NER_train.py                  # Script for training the NER model
