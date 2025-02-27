@@ -7,6 +7,7 @@ This project combines Named Entity Recognition (NER) and Image Classification (C
 ```
 project/
 ├── CNN_realization/
+│   ├── translate.py       # Translate from italian to english
 │   ├── CNN_data/
 │   │   └── raw-img/      # Animal images organized by class folders
 │   │       ├── butterfly/
