@@ -61,7 +61,18 @@ project/
    ```bash
    pip install -r requirements.txt
    ```
-
+3. Download Dataset
+To download the **Animals-10** dataset, run the following command:
+   ```bash
+   cd CNN_data
+   kaggle datasets download -d alessiocorrado99/animals10
+   unzip animals10.zip -d raw-img
+   ```
+4. Prepare Dataset
+Extract the dataset and rename class folders using:
+   ```bash
+   python translate.py
+   ```
 ## Models
 
 ### 1. CNN Image Classification Model
