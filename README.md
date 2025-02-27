@@ -53,7 +53,7 @@ project/
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone git clone https://github.com/Jorakz/NER_for_image_classification.git
    cd animal-classification-detection
    ```
 
@@ -62,7 +62,7 @@ project/
    pip install -r requirements.txt
    ```
 3. Download Dataset
-To download the **Animals-10** dataset, run the following command:
+To download the **Animals-10** (https://www.kaggle.com/datasets/alessiocorrado99/animals10) dataset, run the following command:
    ```bash
    cd CNN_data
    kaggle datasets download -d alessiocorrado99/animals10
